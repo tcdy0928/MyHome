@@ -1,0 +1,59 @@
+#normalbox{
+    position: absolute;
+    top: 50px;
+    left: 160px;
+	width: 1000px;
+	height: 390px;
+}
+#normalbox .top{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(143, 143, 224);
+	text-align: center;
+	border-radius: 50px;
+	box-shadow: 0 0 20px #000000;
+}
+.top .line{
+	display: inline-block;
+	width: 100px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+}
+.top .pic_box{
+	margin: 25px auto 0;
+	width: 850px;
+	height: 300px;
+	border: 3px solid rgba(0, 0,0, 0.6);
+	position: relative;
+}
+.pic_box .bt{
+	position: absolute;
+	top: 100px;
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	background-color: rgba(0, 0,0, 0.2);
+	border-radius: 50px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 100px;
+	cursor: pointer;
+}
+.pic_box .bt:hover{
+	background-color: rgba(0, 0,0, 0.6);
+}
+.pic_box .prev{
+	left: 20px;
+}
+.pic_box .next{
+	right: 20px;
+}
+.pic_box img{
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+

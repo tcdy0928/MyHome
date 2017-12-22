@@ -1,0 +1,30 @@
+.itemBox{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 45px;
+    right: 135px;
+}
+.itemBox .banner-anim{
+    text-align: center;
+    height: 500px;
+}
+.itemBox .banner-anim .banner-user-title{
+    margin-top: 200px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 0 1px #000000;
+}
+.itemBox .banner-anim .banner-user-text{
+    font-size: 26px;
+    color: #333;
+    text-shadow: 0 0 1px #fff;
+}
+.banner-anim .banner-anim-arrow{
+    width: 60px;
+}
+.banner-anim .banner-anim-arrow::before,
+.banner-anim .banner-anim-arrow::after{
+    left: 30px;
+}

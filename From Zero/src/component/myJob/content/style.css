@@ -1,0 +1,19 @@
+.tabBox{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 1200px;
+    height: 100%;
+    padding-top: 30px;
+}
+.tabBox .btn{
+    float:right;
+}
+.tabBox p{
+    font-size:16px;
+    font-weight: 500;
+    font-family: "宋体";
+    color:#fff;
+    text-shadow: 1px 0 1px #000;
+    text-align: center;
+}

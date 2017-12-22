@@ -1,0 +1,215 @@
+.indexMenu{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease;
+}
+
+.indexMenu li{
+    z-index: 5;
+    width: 100%;
+    height: 14.285%;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 90px;
+    text-align: right;
+    text-shadow: 1px 1px 1px #000;
+}
+.indexMenu li span{
+    margin-right: 25px;
+    transition: all 300ms ease;
+}
+.indexMenu li i{
+    vertical-align: top;
+    margin: 25px 25px 0 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: all 300ms ease;
+}
+.homeNav .indexMenu li:hover i{
+    margin-right: 80px;
+}
+
+.indexMenu li:nth-of-type(1){
+    background: #e8b118;
+    transition: all 300ms ease,left 300ms ease 50ms;
+}
+.indexMenu li:nth-of-type(1):hover{
+    background: #edc146;
+}
+.indexMenu li:nth-of-type(1) i{
+    background: url(./img/ico_home.png) no-repeat center center;
+}
+.indexMenu li:nth-of-type(2){
+    background: #dc7913;
+    transition: all 300ms ease,left 300ms ease 100ms;
+}
+.indexMenu li:nth-of-type(2):hover{
+    background: #ee9234;
+}
+.indexMenu li:nth-of-type(2) i{
+    background: url(./img/ico_info.png) no-repeat center center;
+}
+.indexMenu li:nth-of-type(3){
+    background: #ce1131;
+    transition: all 300ms ease,left 300ms ease 150ms;
+}
+.indexMenu li:nth-of-type(3):hover{
+    background: #ed2547;
+}
+.indexMenu li:nth-of-type(3) i{
+    background: url(./img/ico_pic.png) no-repeat center center;
+}
+.indexMenu li:nth-of-type(4){
+    background: #a71955;
+    transition: all 300ms ease,left 300ms ease 200ms;
+}
+.indexMenu li:nth-of-type(4):hover{
+    background: #d3206c;
+}
+.indexMenu li:nth-of-type(4) i{
+    background: url(./img/ico_w.png) no-repeat center center;
+}
+.indexMenu li:nth-of-type(5){
+    background: #33619f;
+    transition: all 300ms ease,left 300ms ease 250ms;
+}
+.indexMenu li:nth-of-type(5):hover{
+    background: #4279c3;
+}
+.indexMenu li:nth-of-type(5) i{
+    background: url(./img/ico_web.png) no-repeat center center;
+}
+.indexMenu li:nth-of-type(6){
+    background: #149b70;
+    transition: all 300ms ease,left 300ms ease 300ms;
+}
+.indexMenu li:nth-of-type(6):hover{
+    background: #1ac891;
+}
+.indexMenu li:nth-of-type(6) i{
+    background: url(./img/ico_job.png) no-repeat center center;
+}
+.indexMenu li:nth-of-type(7){
+    background: #79b053;
+    transition: all 300ms ease,left 300ms ease 350ms;
+}
+.indexMenu li:nth-of-type(7):hover{
+    background: #94c076;
+}
+.indexMenu li:nth-of-type(7) i{
+    background: url(./img/ico_call.png) no-repeat center center;
+}
+
+.leftNav .indexMenu li:hover {
+    margin-left: 150px;
+    border-radius: 50px;
+}
+.leftNav .indexMenu li:hover i{
+    margin-right: 60px;
+}
+
+.rightNav .indexMenu li span{
+    opacity: 0;
+}
+.rightNav .indexMenu li:hover i{
+    animation: animate_menu 300ms ease;
+}
+@keyframes animate_menu{
+    0% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    20% {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    40% {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    60% {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    80% {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    100% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.topNav .indexMenu{
+    height: 100%;
+    top: -100%;
+}
+
+.topNav .indexMenu li{
+    height: 100% !important;
+    left: 0;
+    top: 45px;
+    float: left;
+    width: 14.285%;
+    overflow: hidden;
+    transition: all 0s ease,top 300ms ease,background 300ms ease;
+}
+.topNav .indexMenu li i{
+    position: absolute;
+    top: 100%;
+    margin-top: -42px;
+    left: 50%;
+    margin-left: -25px;
+    transform: scale(1);
+    opacity: 1;
+}
+.topNav .indexMenu li span{
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: scale(2);
+}
+.topNav .indexMenu li:hover i{
+    transform: scale(2);
+    opacity: 0;
+}
+.topNav .indexMenu li:hover span{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.bottomNav .indexMenu{
+    height: 100%;
+    top: 100%;
+}
+.bottomNav .indexMenu li{
+    height: 100% !important;
+    left: 0px;
+    width: 14.285%;
+    float: left;
+    overflow: hidden;
+    transition: all 0s ease,top 300ms ease,background 300ms ease;
+}
+.bottomNav .indexMenu li i{
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    left: 50%;
+    margin-left: -25px;
+}
+.bottomNav .indexMenu li span{
+    opacity: 0;
+}
+.bottomNav .indexMenu li:hover i{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,31 @@
+#markbox{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+	width: 1200px;
+    height: 450px;
+    text-align: left;
+    overflow: hidden;
+}
+#markbox ul{
+    width: 2800px;
+    height: 100%;
+}
+#markbox li{
+    float: left;
+    height: 100%;
+    box-shadow: 0 0 10px #000;
+    margin-right: -545px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+}
+#markbox li:hover,
+#markbox li:hover ~ li{
+    margin-right: 0px;
+    z-index: 2
+}
+#markbox li img{
+    width: 680px;
+    height: 100%;
+}

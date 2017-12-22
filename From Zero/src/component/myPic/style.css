@@ -1,0 +1,94 @@
+.picBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.picBox .mypic_content{
+    position: relative;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 300ms ease;
+    box-sizing: border-box;
+}
+.mypic_content .contentBox{
+    width: 100%;
+    min-height: 100%;
+    padding: 32px 32px 0;
+    box-sizing: border-box;
+}
+
+.contentBox header{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #146BB0;
+    background: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 39px;
+    padding: 10px 0 0 20px;
+    z-index: 5;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #146BB0;
+}
+
+.contentBox .wall_area{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 45px;
+    left: 0;
+    padding: 20px 20px 60px;
+    box-sizing: border-box;
+}
+.wall_area .album_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 300ms ease;
+    box-sizing: border-box;
+}
+.album_box .toolbar{
+    position: relative;
+    padding: 0 10px;
+    z-index: 3;
+    box-sizing: border-box;
+}
+.toolbar .hidBtn{
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .3 ;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.toolbar .hidBtn:hover{
+    opacity: .8;
+}
+.album_box .album{
+    width: 100%;
+    height: 100%;
+}
+
+.normal + .wall_area,
+.wall + .wall_area,
+.mark + .wall_area{
+    z-index: 12;
+}
+
+.normal + .wall_area .album_box,
+.wall + .wall_area .album_box,
+.mark + .wall_area .album_box{
+    opacity: 1;
+} 

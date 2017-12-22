@@ -1,0 +1,117 @@
+.webBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.webBox .contentBox{
+    width: 100%;
+    height: 100%;
+}
+.webBox .contentBox>div{
+    float: left;
+    position: relative;
+    width: 410px;
+    height: 260px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #333;
+    transition: all 300ms ease;
+    background: red;
+}
+.webBox .contentBox .typeInfo{
+    box-shadow: -2px 2px 5px #333;
+}
+.webBox .contentBox>div .code_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 240px;
+    background: #33619f;
+    padding: 10px;
+    transition: all 300ms ease;
+}
+.webBox .contentBox>div .code_box .imgBox{
+    width: 100%;
+    height: 200px;
+    background: red;
+}
+.webBox .contentBox>div .code_box .imgBox img{
+    width: 100%;
+    height: 100%;
+}
+.webBox .contentBox>div .code_box button{
+    margin: 10px;
+    background: #fff;
+    color: #33619f;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.webBox .contentBox>div .code_box button:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.webBox .contentBox>div .info_box{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 240px;
+    background: #33619f;
+    padding: 10px;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+
+.webBox .contentBox .typeInfo{
+    transform: rotateY(180deg);
+}
+.webBox .contentBox .typeInfo .info_box{
+    display: block;
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+.webBox .contentBox .typeInfo .info_box button{
+    margin: 10px;
+    background: #fff;
+    color: #33619f;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.webBox .contentBox .typeInfo .info_box button:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.info_box .imgInfo{
+    width: 370px;
+    height: 180px;
+    color: #fff;
+    padding: 10px;
+    text-indent: 2em; 
+}
+.info_box .imgInfo h3{
+    text-align: center;
+}
+.info_box .imgInfo p{
+    line-height: 30px;
+    font-size: 14px;
+    text-shadow: 0 0 2px #000; 
+}

@@ -1,0 +1,103 @@
+.photo_area{
+    position: relative;
+    width: 165px;
+    height: 210px;
+    margin: 0 40px 50px;
+    float: left;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.photo_area .photo_box3{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    box-shadow: 2px 2px 5px #333;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: 0 100%;
+    transition: all 600ms ease,z-index 100ms ease;
+    box-sizing: border-box;
+}
+.photo_area .photo_content{
+    transition: all 600ms ease;
+    opacity: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+.photo_content>img{
+    width: 140px;
+    height: 140px;
+    margin: 12px;
+}
+.photo_content>span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #ce1131;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.photo_area .photo_box2{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    box-shadow: 1px 1px 3px #333;
+    transform-origin: 0 100%;
+    transition: all 600ms ease,z-index 100ms ease;
+    box-sizing: border-box;
+}
+.photo_area .photo_box{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    box-shadow: 1px 1px 3px #333;
+    transform-origin: 0 100%;
+    transition: all 600ms ease;
+    box-sizing: border-box;
+}
+
+.photo_area:hover .photo_box3{
+    transform: rotate(5deg);
+}
+.photo_area:hover .photo_box2{
+    transform: rotate(-2deg);
+}
+.photo_area:hover .photo_box{
+    transform: rotate(-9deg);
+}
+.photo_box3:hover{
+    z-index: 2;
+}
+.photo_box2:hover{
+    z-index: 2;
+}
+
+.normal .photo_area .photo_box,
+.wall .photo_area .photo_box2,
+.mark .photo_area .photo_box3{
+    width: 500px;
+    height: 1300px;
+    top: -15px;
+    left: 1264px;
+    z-index: 11;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    box-shadow: 2px 0 10px #000;
+}
+.normal .photo_area .photo_box>.photo_content,
+.wall .photo_area .photo_box2>.photo_content,
+.mark .photo_area .photo_box3>.photo_content{
+    opacity: 0;
+}
+
